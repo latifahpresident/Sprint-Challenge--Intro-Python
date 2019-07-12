@@ -34,7 +34,7 @@ def cityreader(cities=[]):
       row_num = 0
       for row in cityreader:
           if row_num == 0:
-              row_num += 1
+             row_num += 1
           else:
               cities.append(City(row[0], float(row[3]), float(row[4])))
     return cities
@@ -43,7 +43,7 @@ cityreader(cities)
 
 # Print the list of cities (name, lat, lon), 1 record per line.
 for c in cities:
-    print(f"({c.name}, {c.lat}, {c.lon})")
+    print(f"{c.name}, {c.lat}, {c.lon}")
 
 # STRETCH GOAL!
 #
